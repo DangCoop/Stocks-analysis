@@ -23,7 +23,16 @@ In conclusion, even though the vast majority of them performed well in 2017, mos
 As it was mentioned in the overview of the project, I first created a VBA script with multiple macros that analyzed the stock data and formatted the results. It did the job, however, I then thought I could refactor the code to be able to do everything in one single macro. This would not only decrease the execution time, but it would also serve me as an efficient design pattern that I could share and use with different stock data.
 
 Before refactoring, my "draftCode" script in module 1 was running the analysis in 0.97 seconds without even including formatting as I had that done in another macro. The code execution time decreased significantly after I refactored.
-![](/Resources/Снимок экрана 2022-06-10 в 12.16.21 AM)
+As you can see, the code run time for both years decreased almost by half to 0.57 seconds. Even though this might not be a huge difference in this case, when we work with significantly larger datasets code performance and execution times will be more important to us.
+
+###Summary
+___
+Refactoring code has its pros and cons. Just like proofreading, going back and reevaluating what we wrote is a key step for better results. One pro would be that it makes the script easier to understand. A clean code is more versatile which is a huge advantage as code is always shared. On the other hand, the disadvantages behind refactoring revolve around the fact that it is just time consuming. Some people even argue that it is useless, as you are working on a body of code that already works and gets the job done.
+
+In this project, this could be easily seen as the code performance and execution times relatively got better. Refactoring the code that did the analysis of the stocks definitely made the script more coherent. Now, I didn't have the iterations in different for loops or the formatting in another subroutine. Instead, I could just run the refactored macro and everything would be done at once. Even though the advantages were many, it took me a lot of time to come up with the refactored version of the code. I needed one single nested for loop to do the job and store the data I needed into arrays rather than simple variables. But even though it was time consuming, I believe it was worthwhile as now I have a body of clean code that I can easily edit in order to analyze different stock data. The goal should be to always strive to create a design pattern that is versatile, clean, easy to understand and shareable.
+
+In conclusion, the original script had the advantage that if the code was wrong at any point, it would only affect that macro and function. The others would still work. Meanwhile, the disadvantages were that it was a very long and all-over-the-place script. On the other hand, the advantage of the refactored script was that it was more efficient and organized, making the execution times a lot shorter and the script easier to follow.
+
 
 
 
