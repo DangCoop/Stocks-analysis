@@ -13,7 +13,7 @@ Steve wants to analyze a higher number of stocks and I am here to help. This may
 
 ***Results***
 
-![](/Resources/VBA_Challenge_2017.png) ![](/Resources/VBA_Challenge_2018.png)
+![](/Resources/VBA_Challenge_2017.png)![](/Resources/VBA_Challenge_2018.png)
 
 As it can be seen just by glancing through the findings, the 2017 performance was considerably better as there is a lot more green to be seen in the table. This means there are more returns that came out positive. This is specially true for stocks such as Daqo, that in 2017 came out with a return of 199.4% and in 2018 of -62.6%. Similarly, this same happened for most of the stocks including Atlantica Yield (ticker: AY), Canadian Solar (CSIQ), First Solar (FSLR), Hannon Armstrong Inc. (HASI), Jinko Solar (JKS), SolarEdge (SEDG), SunPower (SPWR), and Vivint Solar (VSLR).
 
