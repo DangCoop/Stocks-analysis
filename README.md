@@ -11,7 +11,7 @@ He loved being able to analyze each stock at the click of a button and now wants
 
 Steve wants to analyze a higher number of stocks and I am here to help. This may increase the amount of time it takes the analysis to produce results and I’d like to maintain or, even better, improve it! Now I will take advantage of any opportunity to improve the workbooks efficiency by refactoring the VBA coding. To ensure that I am going in the right direction, I will compare the new execution time with the original workbook.
 
-***Results***
+###Results
 
 ![](/Resources/VBA_Challenge_2017.png)![](/Resources/VBA_Challenge_2018.png)
 
@@ -19,6 +19,11 @@ As it can be seen just by glancing through the findings, the 2017 performance wa
 
 In conclusion, even though the vast majority of them performed well in 2017, most of them performed poorly in 2018. Definitely, the top picks would have been Enphase Energy (ENPH) or SunrRun (RUN), which were the only green energy stocks that gave high returns for both consecutive years. The best investment would have been to buy a lot of ENPH stock at the beginning of 2017 and hold it through 2018 as it had 129.5% and 81.9% return, respectively. Nevertheless, money could also have been made by buying a put option on TERP at the beginning of 2017 as it returned -7.2% and then in 2018 another -5%.
 
+###Execution Times and Code Performance
+As it was mentioned in the overview of the project, I first created a VBA script with multiple macros that analyzed the stock data and formatted the results. It did the job, however, I then thought I could refactor the code to be able to do everything in one single macro. This would not only decrease the execution time, but it would also serve me as an efficient design pattern that I could share and use with different stock data.
+
+Before refactoring, my "draftCode" script in module 1 was running the analysis in 0.97 seconds without even including formatting as I had that done in another macro. The code execution time decreased significantly after I refactored.
+![](/Resources/Снимок экрана 2022-06-10 в 12.16.21 AM)
 
 
 
